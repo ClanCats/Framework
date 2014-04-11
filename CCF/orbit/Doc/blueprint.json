@@ -1,0 +1,16 @@
+{
+	"name": "Doc",
+	"version": "1.0.0",
+	"description": "ClanCats documentation module",
+	"homepage": "http://www.clancats.ch",
+	"keywords": ["clancats", "doc", "generator"],
+	"license": "MIT",
+	
+	"authors": [
+		{
+			"name": "ClanCats GmbH",
+			"email": "info@clancats.com"
+		}
+	],
+	"namespace": "Doc"
+}

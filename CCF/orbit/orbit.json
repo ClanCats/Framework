@@ -1,0 +1,13 @@
+{
+	"repos": [
+		{
+			"name": "ClanCats Orbit Repository",
+			"url": "http:\/\/framework.clancats.com\/orbit\/repo",
+			"website": "http:\/\/framework.clancats.com\/orbit"
+		}
+	],
+	"installed": {
+		"CleanRedirect": "CCF\/orbit\/CleanRedirect\/",
+		"Doc": "CCF\/orbit\/Doc\/"
+	}
+}

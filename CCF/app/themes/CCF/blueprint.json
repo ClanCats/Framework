@@ -1,0 +1,22 @@
+{
+	"name": "CCFTheme",
+	"version": "1.0.0",
+	"description": "The default CCF theme based on Twitter's Bootstrap.",
+	"homepage": "http://clancats.com",
+	"keywords": [
+		
+	],
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "Mario Döring",
+			"email": "mario@clancats.com"
+		}
+	],
+	
+	"namespace": "CCFTheme",
+	
+	"wake": false,
+	"install": "Theme::install",
+	"uninstall": "Theme::uninstall"
+}
