@@ -1,0 +1,22 @@
+{
+	"name": "clancats/framework",
+	"description": "ClanCats Framework, efficiency, clarity and performence.",
+	"homepage": "http://www.clancats.com",
+	"keywords": ["ccf", "framework", "clancats"],
+	"license": "MIT",
+	"require": {
+		"php": ">=5.3",
+		"clancats/core": "dev-master"
+	},
+	"config": {
+		"vendor-dir": "CCF/vendor"
+	}
+	"scripts": {
+		"post-install-cmd": [
+			"php cli doctor::permissions"
+		],
+		"post-update-cmd": [
+			"php cli doctor::permissions"
+		]
+	},
+}
