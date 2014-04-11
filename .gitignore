@@ -4,3 +4,4 @@ CCF/vendor/
 CCF/core/
 public/assets/packtacular/
 run
+composer.lock

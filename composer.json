@@ -11,13 +11,5 @@
 	"config": {
 		"vendor-dir": "CCF/vendor"
 	},
-	"scripts": {
-		"post-install-cmd": [
-			"php cli doctor::permissions"
-		],
-		"post-update-cmd": [
-			"php cli doctor::permissions"
-		]
-	},
 	"minimum-stability": "dev"
 }

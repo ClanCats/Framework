@@ -49,8 +49,11 @@ return array(
 	 * The core directory contains of course the CCF core.
 	 * Changing this can be useful if you have multiple 
 	 * installations that should use the same core.
+	 *
+	 * @todo: take this back to CCF/core/ when the composer installer
+	 *        issue is fixed.
 	 */
-	'core'			=> CCROOT.'CCF/core/',
+	'core'			=> CCROOT.'CCF/vendor/clancats/core/src/',
 	
 	/*
 	 *---------------------------------------------------------------
