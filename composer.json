@@ -18,5 +18,6 @@
 		"post-update-cmd": [
 			"php cli doctor::permissions"
 		]
-	}
+	},
+	"minimum-stability": "stable"
 }
