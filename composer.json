@@ -18,5 +18,5 @@
 		"post-update-cmd": [
 			"php cli doctor::permissions"
 		]
-	},
+	}
 }
