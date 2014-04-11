@@ -19,5 +19,5 @@
 			"php cli doctor::permissions"
 		]
 	},
-	"minimum-stability": "stable"
+	"minimum-stability": "dev"
 }
