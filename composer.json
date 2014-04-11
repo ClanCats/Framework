@@ -10,7 +10,7 @@
 	},
 	"config": {
 		"vendor-dir": "CCF/vendor"
-	}
+	},
 	"scripts": {
 		"post-install-cmd": [
 			"php cli doctor::permissions"
