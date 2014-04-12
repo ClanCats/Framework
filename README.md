@@ -1,5 +1,5 @@
-ClanCats Framework
-==================
+ClanCats Framework 2.0
+======================
 
 [![Build Status](https://travis-ci.org/ClanCats/Framework.svg?branch=master)](https://travis-ci.org/ClanCats/Framework)
 
@@ -25,14 +25,11 @@ When someone asks me for about the benefits in CCF:
  * Routing
  
 ## Installation
- 
-__I'am currently working on a better implementation with composer.__
 
-Setting up a new instance of CCF2 is fast and easy. Just clone the source an there you go.<br/>
-Of course you can also [download](https://github.com/mario-deluna/CCF/archive/master.zip "Download CCF2 source") the source manually if you don't have git installed on your maschine.
+Setting up a new instance of CCF2 can be done in just command. Or with other word with composer:
 
 ```
-$ git clone git@github.com:mario-deluna/CCF.git
+$ composer create-project clancats/framework <your project name> -s dev
 ```
 
 ## Requirements
