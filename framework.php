@@ -70,6 +70,7 @@ $directories = array(
 	'console'			=> 'console/',
 	'config'				=> 'config/',
 	'view'				=> 'views/',
+	'test'				=> 'tests/',
 );
 
 /*

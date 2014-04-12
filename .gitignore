@@ -5,3 +5,5 @@ CCF/core/
 public/assets/packtacular/
 run
 composer.lock
+
+phpunit.xml
