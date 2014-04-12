@@ -1,17 +1,19 @@
 ClanCats Framework
 ==================
 
-[![Build Status](https://magnum.travis-ci.com/mario-deluna/CCF.svg?token=qGxJgnPU3EicaRFXzjDt&branch=master)](https://magnum.travis-ci.com/mario-deluna/CCF)
+[![Build Status](https://travis-ci.org/ClanCats/Framework.svg?branch=master)](https://travis-ci.org/ClanCats/Framework)
 
 ClanCats Framework succeed with efficiency, clarity and performance. 
 
+## About CCF
+
 This PHP framework was originally build 2010 as the core of a social Plattform called "ClanCats". In 2012 we decided to split the core and the application apart, so the CCF was born. After developing several application on CCF v1.0, the point has come to rethink the core structure and rewrite the entire thing to a new version that should go open source.
 
-**This is an absolute work in progress!** If you still would like to contribute feel free. Every line of code makes us happy,
+**This is an absolute work in progress!**<br>If you still would like to contribute feel free. Every line of code makes us happy,
 
----
+## Why CCF?
 
-There are many brilliant frameworks out there, so why should you use this one? Every Framework has it's own beauty, with CCF we strongly focus on performance and efficiency. Just give a us try you will not be disappointed. 
+There are many brilliant frameworks out there, so why should you use this one? Every Framework has it's own beauty, with CCF we strongly focus on performance, dynamic and efficiency. Just give a us try you will not be disappointed. 
 
 When someone asks me for about the benefits in CCF:
 
@@ -21,6 +23,8 @@ When someone asks me for about the benefits in CCF:
  * Extensibilty
  * Theming
  * Routing
+ 
+## Installation
  
 __I'am currently working on a better implementation with composer.__
 
