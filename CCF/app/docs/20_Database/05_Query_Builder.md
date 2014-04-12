@@ -132,3 +132,46 @@ DB::select( 'people' )
 	->or_where( 'name', 'mario' );
 ```
 
+### Ordering 
+
+Adding an order by:
+
+```php
+// select * from `people` order by `age` asc
+DB::select( 'people' )->order_by( 'age' );
+```
+
+Descending:
+
+```php
+// select * from `people` order by `age` desc
+DB::select( 'people' )->order_by( 'age', 'desc' );
+```
+
+More columns:
+
+```php
+// select * from `people` order by `age` desc, `name` asc, `created_at` asc
+DB::select( 'people' )
+	->order_by( array( 
+		'age' => 'desc', 
+		'name', 
+		'created_at' => 'asc' 
+	) );
+```
+
+### Groups 
+
+Adding an group by:
+
+```php
+// select * from `people` group by `age`
+DB::select( 'people' )->group_by( 'age' );
+```
+
+and multiple groups
+
+```php
+// select * from `people` group by `age`, `name`
+DB::select( 'people' )->group_by( array( 'age', 'name' ) );
+```
