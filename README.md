@@ -26,7 +26,7 @@ When someone asks me for about the benefits in CCF:
  
 ## Installation
 
-Setting up a new instance of CCF2 can be done in just command. Or with other word with composer:
+Setting up a new instance of CCF2 can be done in just command. Or with other words with composer:
 
 ```
 $ composer create-project clancats/framework <your project name> -s dev
@@ -99,7 +99,6 @@ The boot configuration allow you change the core behaviour of the CCF.
 
 Define how your application detects the environment.<br />
 You can create your complete own script to return the runtime environment or you can make use of the env detector.
-[read more...](/docs/application/environment)
 
 ```
 /boot/environment.php

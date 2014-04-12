@@ -103,3 +103,27 @@ DB::handler()->statement( 'drop table people' );
 ## Getting and using the handler
 
 In some cases, mostly when you have to do a lot of DB operations on one handler you might want to use the handler directly.
+
+Getting a handler instance: 
+
+```php
+$handler = DB::handler();
+```
+
+Getting a special handler instance: 
+
+```php
+$clients_handler = DB::handler( 'clients' );
+```
+
+Running queries on your handler: 
+
+```php
+$handler = DB::handler()->run( 'update people...' );
+```
+
+Fetching on your handler:
+
+```php
+$handler = DB::handler()->fetch( 'select * from people...' );
+```
