@@ -170,7 +170,7 @@ register_shutdown_function( function()
 {	
 	// try to run all shutdown hooks
 	try {
-		\CCEvent::fire( 'ccf.shutdown' );
+		\CCEvent::fire( 'CCF.shutdown' );
 	} catch( \Exception $e ) {}
 
 	// run error shutdown to catch possible errors

@@ -175,3 +175,19 @@ and multiple groups
 // select * from `people` group by `age`, `name`
 DB::select( 'people' )->group_by( array( 'age', 'name' ) );
 ```
+
+### Limit, Offset and Page 
+
+Adding an group by:
+
+```php
+// select * from `people` group by `age`
+DB::select( 'people' )->group_by( 'age' );
+```
+
+and multiple groups
+
+```php
+// select * from `people` group by `age`, `name`
+DB::select( 'people' )->group_by( array( 'age', 'name' ) );
+```
