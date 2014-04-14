@@ -1,4 +1,11 @@
 /*
+ * Affix
+ */
+$(function() {
+	$('.ccf-header-subline').data( 'offset-top', $('.ccf-header-subline').offset().top );
+});
+
+/*
  * main navigation
  */
 $(function() {

@@ -26,7 +26,12 @@ return array(
 		/*
 		 * sidebar ( if false full container gets used )
 		 */
-		'sidebar'	=> false
+		'sidebar'	=> false,
+		
+		/*
+		 * subheader content under the header
+		 */
+		'sub_header' 	=> '',
 	),
 	
 	/*

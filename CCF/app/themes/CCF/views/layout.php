@@ -27,7 +27,7 @@
 		<div class="container">
 			<a href="<?php echo CCUrl::to( '/' ); ?>">
 				<img style="width: 55px;" id="logo-img" alt="CCF Logo" title="ClanCats Logo" src="<?php echo CCAsset::uri( 'img/logo.png', 'theme' ); ?>" />
-				<span class="header-title">ClanCatsFramework</span>
+				<span class="header-title"></span>
 			</a>
 			<div id="ccf-main-nav" role="navigation">
 				<ul>
@@ -42,6 +42,9 @@
 	</div>
 	
 	<div id="wrapper">
+		
+		<?php echo $sub_header; ?>
+		
 		<div class="ccf-header-subline" data-spy="affix" data-offset-top="50" data-offset-bottom="200">
 		  <div class="container">
 			<h1 style="float: right;"><?php echo $topic; ?></h1>

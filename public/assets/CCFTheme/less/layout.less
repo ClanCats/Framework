@@ -6,6 +6,8 @@
 	color: @color-white;
 	z-index: 1;
 	height: 50px;
+	background-image: url( /assets/CCFTheme/img/noize.png );
+	background-size: auto 75px;
 	
 	a {
 		color: @color-white;
@@ -53,6 +55,32 @@
 	}
 }
 
+#hero-image {
+	min-height: 500px;
+	-webkit-background-size: 100%; 
+	-moz-background-size: 100%; 
+	-o-background-size: 100%; 
+	background-size: 100%; 
+	-webkit-background-size: cover; 
+	-moz-background-size: cover; 
+	-o-background-size: cover; 
+	background-size: cover; 
+	background-attachment : scroll;  /* FIXED FOR IE */
+	background-position: center center;
+	color: #eee;
+	.box-shadow( 0 0 20px rgba(0,0,0,0.5) inset );
+	border-top: 5px solid #303030;
+	background-color: #333;
+	
+	h1.header-title {
+		text-align: center;
+		color: #fff;
+		text-shadow: 0 0 20px rgba(0,0,0,0.6);
+		font-size: 62px;
+		padding-top: 100px;
+	}
+}
+
 #ccf-main-nav {
 	float: right;
 	
@@ -67,6 +95,7 @@
 			
 			&.active a {
 				border-top: 2px solid @color-main;
+				.box-shadow( inset 0 10px 10px -10px rgba(53, 145, 215, 0.8) inset );
 				color: #fff;
 			}
 

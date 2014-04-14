@@ -119,7 +119,8 @@ class Packtacular
 	 * @param string 	$css
 	 * @return string
 	 */
-	protected static function handle_css( $css ) {
+	protected static function handle_css( $css ) 
+	{
 		$less = new \lessc();
 		$less->setFormatter("compressed");
 		//$less->setFormatter( 'compressed' );
@@ -143,7 +144,7 @@ class Packtacular
 		$url = 'http://closure-compiler.appspot.com/compile';
 		$data = array(
 			'compilation_level'	=> 'SIMPLE_OPTIMIZATIONS',
-			'output_format' 	=> 'text', 
+			'output_format' 		=> 'text', 
 			'output_info' 		=> 'compiled_code',
 			'language'			=> 'ECMASCRIPT5',
 			'js_code'			=> $js,
