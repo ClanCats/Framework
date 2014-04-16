@@ -33,7 +33,7 @@ require_once __DIR__."/../framework.php";
  * For the unit tests we need some additional resources like
  * controllers, views, ect... 
  */
-CCOrbit::enter( 'CCUnit' );
+CCOrbit::enter( COREPATH.'orbit/CCUnit' );
 
 // writ header
 CCCli::line("==============================
