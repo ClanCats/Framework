@@ -8,6 +8,8 @@ ClanCats Framework 2.0
 
 ClanCats Framework succeed with efficiency, clarity and performance. 
 
+This is the Application repository if you like to contribute take a look at the core repository: https://github.com/ClanCats/Core
+
 ## About CCF
 
 This PHP framework was originally build 2010 as the core of a social Plattform called "ClanCats". In 2012 we decided to split the core and the application apart, so the CCF was born. After developing several application on CCF v1.0, the point has come to rethink the core structure and rewrite the entire thing to a new version that should go open source.
