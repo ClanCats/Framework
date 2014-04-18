@@ -8,7 +8,7 @@ ClanCats Framework 2.0
 
 ClanCats Framework succeed with efficiency, clarity and performance. 
 
-This is the Application repository if you like to contribute take a look at the core repository: https://github.com/ClanCats/Core
+_This is the Application repository if you like to contribute take a look at the core repository:_ https://github.com/ClanCats/Core
 
 ## About CCF
 
