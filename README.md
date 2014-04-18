@@ -2,6 +2,9 @@ ClanCats Framework 2.0
 ======================
 
 [![Build Status](https://travis-ci.org/ClanCats/Framework.svg?branch=master)](https://travis-ci.org/ClanCats/Framework)
+[![License](http://img.shields.io/packagist/l/clancats/framework.svg)](https://github.com/ClanCats/Framework)
+[![Downloads](http://img.shields.io/packagist/dm/clancats/core.svg)](https://github.com/ClanCats/Framework)
+
 
 ClanCats Framework succeed with efficiency, clarity and performance. 
 
