@@ -106,7 +106,7 @@ class Doc
 	 * @return UI\E
 	 */
 	public function navigation( $tree, $prefix )
-	{	
+	{
 		$buffer = "";
 		$prefix .= '/';
 		
@@ -115,6 +115,14 @@ class Doc
 			if ( strpos( $key, '_' ) !== false )
 			{
 				$key = substr( $key, strpos( $key, '_' )+1 );
+			}
+			
+			// when the key start with an _ we use it as title in the 
+			// navigation sidebar
+			if ( substr( $key, 0, 1 ) == '_' )
+			{
+				$buffer .= \UI\HTML::tag( 'li', trim( \CCStr::replace( $key, array( '_' =>' ' ) ) ) )
+					->add_class( 'sidebar-title' ); continue;
 			}
 			
 			$name = \CCStr::replace( $key, array( '_' =>' ' ) );

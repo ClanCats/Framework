@@ -37,7 +37,12 @@ class App extends CCApp
 	 * @return void | CCResponse
 	 */
 	public static function wake() 
-	{	
+	{
+		/*
+		 * Start the session by adding the current uri
+		 */
+		CCSession::set( 'uri', CCServer::uri() );
+		
 		/*
 		 * try to authenticate the user
 		 */
