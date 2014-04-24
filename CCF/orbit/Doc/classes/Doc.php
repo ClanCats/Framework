@@ -73,6 +73,8 @@ class Doc
 				\CCArr::set( $key, $filename, $this->_tree );
 			}
 		}
+		
+		ksort($this->_tree);
 	}
 	
 	/**
