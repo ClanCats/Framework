@@ -69,7 +69,7 @@ class Doc
 		{
 			if ( \CCStr::extension( $filename ) == 'md' )
 			{
-				$key = \CCStr::replace( substr( \CCStr::cut( $filename, '.' ), strlen( $dir ) ), array( '/' => '.' ));
+				$key = \CCStr::replace( substr( \CCStr::cut( $filename, '.', true, true ), strlen( $dir ) ), array( '/' => '.' ));
 				\CCArr::set( $key, $filename, $this->_tree );
 			}
 		}
