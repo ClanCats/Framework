@@ -31,11 +31,15 @@ When someone asks me for about the benefits in CCF:
  
 ## Installation
 
-Setting up a new instance of CCF2 can be done in just command. Or with other words with composer:
+Setting up a new instance of CCF2 can be done in just command. Or with other words with composer.
+
+Run the following command to create a new project with CCF.
 
 ```
 $ composer create-project clancats/framework <your project name> -s dev
 ```
+
+_Composer installed? Read the installation guide here: https://getcomposer.org/download/_
 
 ## Requirements
 

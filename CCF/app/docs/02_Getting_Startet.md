@@ -26,8 +26,6 @@ These are the most common bundle components, of course there are more and you ca
 
 ## Router
 
-The CCRouter is a nice guy, so don't go with the jerks.
-
 For our little blog we are going to use the url pattern `news/`. So open your **router.config.php** in this file you can define routes that get added on application _wake_ to the router.
 
 **File:** `CCF/app/config/router.config.php`
