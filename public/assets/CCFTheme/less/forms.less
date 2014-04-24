@@ -1,0 +1,127 @@
+/**
+ * Buttons
+ */
+.btn, .form-control {
+	.border-radius( 0 );
+	border: 0;
+	font-weight: @font-weight;
+}
+
+.btn {
+	
+	border: 2px solid;
+	padding: 5px 11px;
+	opacity: 0.8;
+	
+	&:hover {
+		opacity: 1;
+	}
+	
+	&.btn-lg {
+		padding: 9px 15px;
+		font-size: 15px;
+	}
+	
+	&.btn-sm {
+		padding: 4px 9px;
+	}
+	
+	&.btn-xs {
+		padding: 0px 4px;
+	}
+	
+	&.btn-primary {
+		background-color: @color-main;
+		border-color: @color-main;
+		opacity: 1;
+		
+		&:hover {
+			background-color: transparent;
+			color: @color-main;
+		}
+	}
+	
+	&.btn-dark {
+		@color: #333;
+	
+		background-color: @color;
+		border-color: @color;
+		color: #fff;
+		
+		&:hover {
+			background-color: transparent;
+			color: @color;
+		}
+	};
+	
+	&.btn-danger {
+		@color: #cc3d3d;
+	
+		background-color: @color;
+		border-color: @color;
+		
+		&:hover {
+			background-color: transparent;
+			color: @color;
+		}
+	}
+	
+	&.btn-info {
+		@color: #39b3d7;
+	
+		background-color: @color;
+		border-color: @color;
+		
+		&:hover {
+			background-color: transparent;
+			color: @color;
+		}
+	}
+	
+	&.btn-warning {
+		@color: #f0ad4e;
+	
+		background-color: @color;
+		border-color: @color;
+		
+		&:hover {
+			background-color: transparent;
+			color: @color;
+		}
+	}
+	
+	&.btn-default {
+		background-color: transparent;
+		border-color: #dbdbdb;
+		color: @color-dark;
+		
+		&:hover {
+			background-color: #dbdbdb;
+			color: @color-dark;
+		}
+	}
+	
+	&.btn-transparent {
+		background-color: transparent;
+		border-color: @color-main;
+		color: @color-main;
+		
+		&:hover {
+			background-color: @color-main;
+			color: #fff;
+		}
+	}
+	
+	&.btn-white {
+		background-color: transparent;
+		border-color: #fff;
+		color: #fff;
+		text-shadow: 0 0 7px #000;
+		
+		&:hover {
+			background-color: #fff;
+			color: @color-dark;
+			text-shadow: none;
+		}
+	}
+}

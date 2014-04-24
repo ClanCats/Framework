@@ -33,7 +33,7 @@ When someone asks me for about the benefits in CCF:
 
 Setting up a new instance of CCF2 can be done in just command. Or with other words with composer.
 
-Run the following command to create a new project with CCF.
+Run the following command ( without the '$' ) to create a new project with CCF.
 
 ```
 $ composer create-project clancats/framework <your project name> -s dev

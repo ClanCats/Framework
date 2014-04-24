@@ -52,9 +52,13 @@ return array(
 		'less/mixins/css3.less'			=> 'theme@style',
 		'less/mixins/transform.less'		=> 'theme@style',
 		
+		// elusive webfont
+		'less/elusive-webfont.less'		=> 'theme@style',
+		
 		// Main style
 		'less/style.less' 				=> 'theme@style',
 		'less/typography.less'			=> 'theme@style',
+		'less/forms.less'				=> 'theme@style',
 		'less/layout.less'				=> 'theme@style',
 		
 		// js core

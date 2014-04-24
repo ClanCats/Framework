@@ -2,3 +2,5 @@
 <strong>Running: </strong><?php echo $runtime_name; ?>
 <br>
 <strong>Environment: </strong><?php echo $environment; ?>
+
+<hr>

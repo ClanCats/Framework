@@ -12,7 +12,7 @@
 	<?php echo CCAsset::code( 'css' ); ?>
 	
 	<!-- fonts -->
-	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400' rel='stylesheet' type='text/css'>
 
 	<!--[if lt IE 9]>
 	  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>

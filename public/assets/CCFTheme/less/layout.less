@@ -23,7 +23,7 @@
 	
 	.header-title {
 		font-family: @header-font;
-		font-weight: @header-weight;
+		font-weight: @font-weight-light;
 		font-size: 24px;
 		line-height: 50px;
 	}
@@ -75,9 +75,24 @@
 	h1.header-title {
 		text-align: center;
 		color: #fff;
-		text-shadow: 0 0 20px rgba(0,0,0,0.6);
+		text-shadow: 0 0 20px rgba( 0,0,0,0.6 );
 		font-size: 62px;
 		padding-top: 100px;
+	}
+	
+	.header-hero-icon {
+		color: #fff;
+		font-size: 64px;
+		margin-left: 30px;
+		
+		&:first-child {
+			margin-left: 0;
+		}
+		
+		&:hover {
+			text-decoration: none;
+			text-shadow: 0 0 20px #fff;
+		}
 	}
 }
 
@@ -131,7 +146,7 @@
 			&.sidebar-title {
 				text-transform: uppercase;
 				font-family: @header-font;
-				font-weight: @header-weight;
+				font-weight: @font-weight-light;
 				border-bottom: 1px solid @color-border;
 				margin-bottom: 10px;
 				margin-top: 20px;
@@ -144,7 +159,7 @@
 			&.active {
 				
 				> a {
-					font-weight: 700;
+					font-weight: @font-weight-bold;
 					color: @color-main;
 					background-color: transparent;
 					border-right: 2px solid @color-main;
@@ -158,7 +173,7 @@
 			> a {
 				display: block;
 				font-size: 13px;
-				font-weight: 500;
+				font-weight: @font-weight-bold;
 				color: #999;
 				padding: 4px 20px;
 			}
@@ -175,7 +190,6 @@
 				padding-bottom: 2px;
 				padding-right: 20px;
 				font-size: 12px;
-				font-weight: 400;
 				border-right: none;
 				//border-left: 20px solid @color-border;
 				
