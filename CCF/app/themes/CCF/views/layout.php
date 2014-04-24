@@ -45,7 +45,9 @@
 		
 		<?php echo $sub_header; ?>
 		
-		<div class="ccf-header-subline" data-spy="affix" data-offset-top="50" data-offset-bottom="200">
+		
+		<div class="ccf-header-subline" <?php if ( !$sub_header ) : ?> 
+			data-spy="affix" data-offset-top="50" data-offset-bottom="200" <?php endif; ?>>
 		  <div class="container">
 			<h1 style="float: right;"><?php echo $topic; ?></h1>
 		  </div>
