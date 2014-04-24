@@ -2,12 +2,15 @@
 	"topic": "Instllation / Setup"
 }
 
-Setting up a new instance of CCF2 is fast and easy. Just clone the source an there you go.<br/>
-Of course you can also [download](https://github.com/mario-deluna/CCF/archive/master.zip "Download CCF2 source") the source manually if you don't have git installed on your maschine.
+Setting up a new instance of CCF2 can be done in just command. Or with other words with composer.
+
+Run the following command to create a new project with CCF.
 
 ```
-$ git clone git@github.com:mario-deluna/CCF.git
+$ composer create-project clancats/framework <your project name> -s dev
 ```
+
+_Composer installed? Read the installation guide here: https://getcomposer.org/download/_
 
 ## Requirements
 
@@ -76,7 +79,6 @@ The boot configuration allow you change the core behaviour of the CCF.
 
 Define how your application detects the environment.<br />
 You can create your complete own script to return the runtime environment or you can make use of the env detector.
-[read more...](/docs/application/environment)
 
 ```
 /boot/environment.php
