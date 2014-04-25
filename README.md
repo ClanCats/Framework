@@ -36,7 +36,7 @@ Setting up a new instance of CCF2 can be done in just command. Or with other wor
 Run the following command ( without the '$' ) to create a new project with CCF.
 
 ```
-$ composer create-project clancats/framework <your project name> -s dev
+$ composer create-project clancats/framework <your project name> --prefer-dist -s dev
 ```
 
 _Composer installed? Read the installation guide here: https://getcomposer.org/download/_
