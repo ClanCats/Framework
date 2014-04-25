@@ -1,9 +1,9 @@
-.DS_Store
+public/assets/packtacular/
 CCF/storage/
 CCF/vendor/
-CCF/core/
-public/assets/packtacular/
-run
+.DS_Store
+Thumbs.db
+composer.phar
 composer.lock
-
 phpunit.xml
+run
