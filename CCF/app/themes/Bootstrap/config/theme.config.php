@@ -20,5 +20,10 @@ return array(
          * the default html description
          */
         'description'   => 'Change your default description under theme.config -> defatul.description.',
+        
+        /*
+         * sidebar ( if false full container gets used )
+         */
+        'sidebar'	=> false,
     ), 
 );

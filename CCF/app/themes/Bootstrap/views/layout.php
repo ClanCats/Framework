@@ -8,8 +8,8 @@
 	<meta name="description" content="<?php echo $description; ?>">
 	
 	<!-- styling -->
-	<?php echo CCAsset::styles( 'theme' ); ?>
-	<?php echo CCAsset::styles(); ?>
+	<?php echo CCAsset::code( 'css', 'theme' ); ?>
+	<?php echo CCAsset::code( 'css' ); ?>
 
 	<!--[if lt IE 9]>
 	  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -17,13 +17,28 @@
 	<![endif]-->
 	
 	<!-- header scripts -->
-	<?php echo CCAsset::scripts( 'header' ); ?>
+	<?php echo CCAsset::code( 'js', 'header' ); ?>
   </head>
   <body>
-	<?php echo $content; ?>
+	<div id="main-container" class="container">
+		<div>
+			<?php if ( $sidebar !== false ) : ?>
+			<div class="row">
+				<div class="col-md-3">
+					<?php echo $sidebar; ?>
+				</div>
+				<div class="col-md-9">
+					<?php echo $content; ?>
+				</div>
+			</div>
+			<?php else : ?>
+				<?php echo $content; ?>
+			<?php endif; ?>
+		</div>
+	</div>
 
 	<!-- footer scripts -->
-	<?php echo CCAsset::scripts(); ?>
-	<?php echo CCAsset::scripts( 'theme' ); ?>
+	<?php echo CCAsset::code( 'js', 'theme' ); ?>
+	<?php echo CCAsset::code( 'js' ); ?>
   </body>
 </html>
