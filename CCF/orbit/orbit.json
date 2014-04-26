@@ -8,7 +8,7 @@
 	],
 	"installed": {
 		"Packtacular": "CCF\/orbit\/Packtacular\/",
-		"Bootstrap": "CCF\/app\/themes\/Bootstrap\/",
+		"Bootstrap": "CCF\/app\/themes\/Bootpack\/",
 		"CleanRedirect": "CCF\/orbit\/CleanRedirect\/"
 	}
 }
