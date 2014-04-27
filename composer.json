@@ -13,14 +13,13 @@
 	},
 	"scripts": {
 		"post-install-cmd": [
-			"php cli phpunit::build",
-			"php cli doctor::security_key"
+			"php cli phpunit::build"
 		],
 		"post-update-cmd": [
 			"php cli phpunit::build"
 		],
 		"post-create-project-cmd": [
-			
+			"php cli doctor::security_key"
 		]
 	},
 	"minimum-stability": "dev"
