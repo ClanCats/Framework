@@ -1,0 +1,148 @@
+pre, pre.prettyprint {
+	-webkit-border-radius: 2px;
+	border-radius: 2px;
+	border: 0;
+	background-color: #333;
+	color: #fff;
+	padding: 10px;
+	padding-left: 30px;
+	line-height: 18px !important;
+	margin-bottom: 20px;
+}
+
+pre code, pre.prettyprint code {
+	display: block;
+	padding: 0.5em;
+	font-size: 12px;
+	font-family: Menlo, Consolas, Monaco, "Lucida Console", monospace;
+}
+
+code {
+	background-color: #fff3d6;
+	color: #333;
+	-webkit-border-radius: 2px;
+	border-radius: 2px;
+	padding: 1px 2px;
+	font-family: Consolas, Monaco, "Lucida Console", monospace;
+}
+
+em {
+	color: #666;
+}
+
+.btn, .form-control {
+	-webkit-border-radius: 0;
+	border-radius: 0;
+	border: 0;
+	font-weight: 300;
+}
+
+.btn {
+	border: 2px solid;
+	padding: 5px 11px;
+	opacity: 0.8;
+}
+
+.btn:hover {
+	opacity: 1;
+}
+
+.btn.btn-lg {
+	padding: 9px 15px;
+	font-size: 15px;
+}
+
+.btn.btn-sm {
+	padding: 4px 9px;
+}
+
+.btn.btn-xs {
+	padding: 0px 4px;
+}
+
+.btn.btn-primary {
+	background-color: #3b92d4;
+	border-color: #3b92d4;
+	opacity: 1;
+}
+
+.btn.btn-primary:hover {
+	background-color: transparent;
+	color: #3b92d4;
+}
+
+.btn.btn-dark {
+	background-color: #333;
+	border-color: #333;
+	color: #fff;
+}
+
+.btn.btn-dark:hover {
+	background-color: transparent;
+	color: #333;
+}
+
+.btn.btn-danger {
+	background-color: #cc3d3d;
+	border-color: #cc3d3d;
+}
+
+.btn.btn-danger:hover {
+	background-color: transparent;
+	color: #cc3d3d;
+}
+
+.btn.btn-info {
+	background-color: #39b3d7;
+	border-color: #39b3d7;
+}
+
+.btn.btn-info:hover {
+	background-color: transparent;
+	color: #39b3d7;
+}
+
+.btn.btn-warning {
+	background-color: #f0ad4e;
+	border-color: #f0ad4e;
+}
+
+.btn.btn-warning:hover {
+	background-color: transparent;
+	color: #f0ad4e;
+}
+
+.btn.btn-default {
+	background-color: transparent;
+	border-color: #dbdbdb;
+	color: #3e3e3e;
+}
+
+.btn.btn-default:hover {
+	background-color: #dbdbdb;
+	color: #3e3e3e;
+}
+
+.btn.btn-transparent {
+	background-color: transparent;
+	border-color: #3b92d4;
+	color: #3b92d4;
+}
+
+.btn.btn-transparent:hover {
+	background-color: #3b92d4;
+	color: #fff;
+}
+
+.btn.btn-white {
+	background-color: transparent;
+	border-color: #fff;
+	color: #fff;
+	text-shadow: 0 0 7px #000;
+}
+
+.btn.btn-white:hover {
+	background-color: #fff;
+	color: #3e3e3e;
+	text-shadow: none;
+}

@@ -2,8 +2,8 @@
 	<div class="col-md-4">
 		<h4>Functions</h4>
 		<a href="<?php echo CCUrl::action( 'index' ); ?>" class="btn btn-default">Reload</a>
-		<a href="<?php echo CCUrl::action( 'regenerate' ); ?>" class="btn btn-default btn-warning">Regenerate</a>
-		<a href="<?php echo CCUrl::action( 'destroy' ); ?>" class="btn btn-default btn-danger">Destroy</a>
+		<a href="<?php echo CCUrl::action( 'regenerate' ); ?>" class="btn btn-warning">Regenerate</a>
+		<a href="<?php echo CCUrl::action( 'destroy' ); ?>" class="btn btn-danger">Destroy</a>
 		<hr>
 		
 		<h4>Set</h4>

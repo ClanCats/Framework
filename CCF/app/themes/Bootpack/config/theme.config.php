@@ -33,23 +33,23 @@ return array(
      * you can pack files to gether:
      * <holder>@<pack>
      */
-    'assets' => array(
-        
-        // load bootstrap core
-        'css/bootstrap.min.css'		=> 'theme@style',
-        
-        // add mixins
-        'less/mixins/mixins.less'		=> 'theme@style',
-        'less/mixins/background.less'	=> 'theme@style',
-        'less/mixins/css3.less'			=> 'theme@style',
-        'less/mixins/transform.less'		=> 'theme@style',
-        
-        // Main style
-        'less/style.less' 				=> 'theme@style',
-        
-        // js core
-        'js/jquery/jquery.js'			=> 'lib@lib',
-        'js/bootstrap.min.js'			=> 'theme@core',
-        'js/application.js'				=> 'theme@app',
-    )
+	'assets' => array(
+		// load bootstrap core
+		'css/bootstrap.min.css'		=> 'theme@style',
+		'css/style.css'				=> 'theme@style',
+
+		// add mixins
+		'less/mixins/mixins.less'		=> 'theme@style',
+		'less/mixins/background.less'	=> 'theme@style',
+		'less/mixins/css3.less'			=> 'theme@style',
+		'less/mixins/transform.less'		=> 'theme@style',
+
+		// Main style
+		'less/style.less' 				=> 'theme@style',
+
+		// js core
+		'js/jquery/jquery.js'			=> 'lib@lib',
+		'js/bootstrap.min.js'			=> 'theme@core',
+		'js/application.js'				=> 'theme@app',
+	)
 );
