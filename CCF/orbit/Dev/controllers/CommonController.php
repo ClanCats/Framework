@@ -9,7 +9,7 @@
  * @copyright     2010 - 2014 ClanCats GmbH
  *
  */
-class IndexController extends CCViewController 
+class CommonController extends \CCViewController 
 {
 	
 	/**
@@ -25,7 +25,16 @@ class IndexController extends CCViewController
 		
 		// get only the body
 		$pinfo = preg_replace( '%^.*<body>(.*)</body>.*$%ms','$1',$pinfo);
-		echo "<div class='row mrt50'><div class='grid16'>".$pinfo."</div></div>";
+		
+		// add table class
+		$pinfo = str_replace( '<table', '<table class="table table-bordered"', $pinfo );
+		
+		// better headers
+		$pinfo = \CCStr::replace( $pinfo, array(
+			'</h2>' => '</h2><hr>'
+		));
+		
+		echo $pinfo;
 	}
 	
 	/**

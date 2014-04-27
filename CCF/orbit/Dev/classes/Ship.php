@@ -18,26 +18,16 @@ class Ship extends \CCOrbit_Ship
 	 */
 	public function wake()
 	{
-		//_dd();
-	}
-	
-	/**
-	 * install the ship
-	 * 
-	 * @return void
-	 */
-	public function install()
-	{
-		// Do stuff
-	}
-	
-	/**
-	 * uninstall the ship
-	 * 
-	 * @return void
-	 */
-	public function unsintall()
-	{
-		// Do stuff
+		if ( !\ClanCats::in_development() ) 
+		{
+			return;
+		}
+		
+		// get all controllers in the dev namespace
+		foreach( \CCFile::ls( \CCPath::controllers( 'Dev::*Controller'.EXT ) ) as $path ) 
+		{
+			$name = \CCStr::cut( basename( $path ), 'Controller'.EXT );
+			\CCRouter::on( 'dev/'.\CCStr::lower( $name ), 'Dev::'.$name );
+		}
 	}
 }
