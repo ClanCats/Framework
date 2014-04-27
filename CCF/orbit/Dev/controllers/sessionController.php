@@ -62,41 +62,18 @@ class SessionController extends \CCViewController
 	/**
 	 * regenerate session
 	 */
-	public function action_regenerate( $instance_key ) {
-		CCSession::instance( $instance_key )->regenerate(); 
-		return CCRedirect::to( static::uri( $instance_key ) );
+	public function action_regenerate( $instance_key ) 
+	{
+		$this->manager->regenerate(); 
+		return \CCRedirect::action( 'index', array(), true );
 	}
 	
 	/**
 	 * destroy session
 	 */
-	public function action_destroy( $instance_key ) {
-		CCSession::instance( $instance_key )->destroy(); 
-		return CCRedirect::to( static::uri( $instance_key ) );
-	}
-	
-	/**
-	 * create database table
-	 */
-	public function action_installdb( $instance_key ) {
-		$query = "
-		CREATE TABLE  `".CCSession::$config->get('database.table')."` (
-			`id` CHAR( 32 ) NOT null ,
-			`instance` VARCHAR( 12 ) NOT null ,
-			`last_active` INT NOT null ,
-			`user_agent` VARCHAR( 255 ) NOT null ,
-			`client_ip` VARCHAR( 16 ) NOT null ,
-			`client_port` INT NOT null ,
-			`language` VARCHAR( 5 ) NOT null ,
-			`user_id` INT NOT null ,
-			`content` TEXT NOT null ,
-		PRIMARY KEY (  `id` ) ,
-		INDEX (  `instance` ,  `user_id` )
-		) ENGINE = MYISAM ;
-		";
-		
-		DB::query( $query, array(), CCSession::$config->get('database.instance') );
-		
-		return CCRedirect::to( static::uri( $instance_key ) );
+	public function action_destroy( $instance_key ) 
+	{
+		$this->manager->destroy();
+		return \CCRedirect::action( 'index', array(), true );
 	}
 }
