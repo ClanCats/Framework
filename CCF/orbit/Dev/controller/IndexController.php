@@ -1,9 +1,16 @@
-<?php
-/*
- * the dev controller with all the stuff i 
- * was to lazy to create an own controller for it >.<
+<?php namespace Dev;
+/**
+ * Development index controller
+ **
+ * 
+ * @package       Dev
+ * @author        Mario Döring <mario@clancats.com>
+ * @version       1.0
+ * @copyright     2010 - 2014 ClanCats GmbH
+ *
  */
-class DevController extends CCViewController {
+class IndexController extends CCViewController 
+{
 	
 	/**
 	 * show php info 

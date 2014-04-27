@@ -2,13 +2,14 @@
 	"repos": [
 		{
 			"name": "ClanCats Orbit Repository",
-			"url": "http:\/\/framework.clancats.com\/orbit\/repo",
-			"website": "http:\/\/framework.clancats.com\/orbit"
+			"url": "http://framework.clancats.com/orbit/repo",
+			"website": "http://framework.clancats.com/orbit"
 		}
 	],
 	"installed": {
-		"Packtacular": "CCF\/orbit\/Packtacular\/",
-		"Bootstrap": "CCF\/app\/themes\/Bootpack\/",
-		"CleanRedirect": "CCF\/orbit\/CleanRedirect\/"
+		"Packtacular": "CCF/orbit/Packtacular/",
+		"Bootstrap": "CCF/app/themes/Bootpack/",
+		"CleanRedirect": "CCF/orbit/CleanRedirect/",
+		"Dev": "CCF/orbit/Dev/"
 	}
 }
