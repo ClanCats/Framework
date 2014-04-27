@@ -30,6 +30,7 @@ em {
 	color: #666;
 }
 
+/* Buttons, Forms */
 .btn, .form-control {
 	-webkit-border-radius: 0;
 	border-radius: 0;
@@ -145,4 +146,40 @@ em {
 	background-color: #fff;
 	color: #3e3e3e;
 	text-shadow: none;
+}
+
+/* Navigation */
+.navbar-inverse {
+	background-color: #3e3e3e;
+}
+
+.navbar-inverse .navbar-brand {
+	font-weight: 200;
+}
+
+.navbar-inverse ul.navbar-nav > li.active > a, .navbar-inverse ul.navbar-nav > li.dropdown.open > a {
+	border-top: 2px solid #3b92d4;
+	box-shadow: inset 0 10px 10px -10px rgba(53, 145, 215, 0.8) inset;
+	-webkit-box-shadow: inset 0 10px 10px -10px rgba(53, 145, 215, 0.8) inset;
+	color: #fff;
+	background-color: #3e3e3e;
+}
+
+.navbar-inverse ul.navbar-nav > li > a {
+	color: #fff;
+	font-size: 11px;
+	font-weight: 300;
+	text-transform: uppercase;
+	border-top: 2px solid transparent;
+}
+
+.navbar-inverse ul.navbar-nav > li > a:hover {
+	color: #fff;
+	text-decoration: none;
+}
+
+/* Dropdown */
+ul.dropdown-menu {
+	-webkit-border-radius: 0;
+	border-radius: 0;
 }
