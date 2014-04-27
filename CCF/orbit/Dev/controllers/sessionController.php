@@ -1,47 +1,62 @@
 <?php
 /**
- * Session Playground
+ * Development session sandbox
+ **
+ * 
+ * @package       Dev
+ * @author        Mario Döring <mario@clancats.com>
+ * @version       1.0
+ * @copyright     2010 - 2014 ClanCats GmbH
+ *
  */
-class SessionController extends CCViewController {
+namespace Dev;
+
+use CCIn;
+use CCSession;
+
+class SessionController extends \CCViewController 
+{	
+	/**
+	 * The current session manager
+	 */
+	private $manager = null;
+	
+	/**
+	 * Get the session instance on controller wake
+	 */
+	public function wake()
+	{
+		$this->manager = \CCSession::manager( CCIn::get( 'manager' ) );
+	}
 	
 	/**
 	 * Session index
 	 */
-	public function SessionIndex( $instance_key ) {
-		
-		// session
-		$session = CCSession::instance( $instance_key );
-		
-		// is post request?
-		if ( ClanCats::$POST ) {
-			
-			$key = ClanCats::post('key', 'foo');
-			$value = ClanCats::post('value', 'bar');
-			
-			if ( ClanCats::post('static') == 'yes' ) {
-				$session->$key = $value;
-			}
-			else {
-				$session->set( $key, $value );
-			}
+	public function action_index() 
+	{	
+		// Did we recive post values?
+		if ( CCIn::method( 'post' ) ) 
+		{
+			$this->manager->set( CCIn::post( 'key' ), CCIn::post( 'value' ) );
 		}
 		
 		// set our session view
-		$this->view = CCView::create( 'development/sessionView' );
+		$this->view = \CCView::create( 'Dev::session' );
 		
 		// title
-		$this->theme->topic = 'Session Demo';
+		$this->theme->topic = 'Session Sandbox';
 		
 		// set view data
-		$this->view->session_dump 	= print_r( $session, true );
-		$this->view->current_uri 	= static::uri( $instance_key );
+		$this->view->data_dump = print_r( $this->manager->raw(), true );
+		$this->view->config_dump = print_r( $this->manager, true );
 	}
 	
 	/**
-	 * uri
+	 * Switch the current session manager
 	 */
-	private function uri( $instance_key ) {
-		return 'dev/session-'.$instance_key;
+	public function action_manager()
+	{
+		return \CCRedirect::action( 'index', array( 'manager' => CCIn::post( 'name' ) ) );
 	}
 	
 	/**
