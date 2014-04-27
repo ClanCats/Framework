@@ -13,7 +13,8 @@
 	},
 	"scripts": {
 		"post-install-cmd": [
-			"php cli phpunit::build"
+			"php cli phpunit::build",
+			"php cli doctor::security_key"
 		],
 		"post-update-cmd": [
 			"php cli phpunit::build"
