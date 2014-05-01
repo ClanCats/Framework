@@ -8,7 +8,7 @@
  * @copyright 		2010 - 2013 ClanCats GmbH 
  *
  */
-class Model_User extends \CC\Core\Model_User {
+class Model_User extends CCModel {
 
 	/*
 	 * defaults
