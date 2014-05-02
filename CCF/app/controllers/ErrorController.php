@@ -24,6 +24,6 @@ class ErrorController extends \CCController
 	 */
 	public function action_500() 
 	{
-		echo "500 Server fehler";
+		return CCResponse::create( CCView::create( 'Core::CCF/500' )->render(), 500 );
 	}
 }
