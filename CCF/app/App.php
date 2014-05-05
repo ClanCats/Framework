@@ -25,14 +25,15 @@ class App extends CCApp
 	/**
 	 * current user object
 	 *
-	 * @var CCUser
+	 * @var User
 	 */
 	public static $user = null;
 	
 	/**
 	 * Application initialization.
 	 * do your inital stuff here like getting the current user object ect..
-	 * You can return a CCResponse wich will cancle all other actions if enebaled ( see. main.config -> send_app_wake_response )
+	 * You can return a CCResponse wich will cancle all other actions 
+	 * if enebaled ( see. main.config -> send_app_wake_response )
 	 *
 	 * @return void | CCResponse
 	 */

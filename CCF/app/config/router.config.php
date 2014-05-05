@@ -25,4 +25,9 @@ return array(
 	 */
 	'#404'	=> 'Error@404',
 	'#500'	=> 'Error@500',
+	
+	/*
+	 * The authentication module
+	 */
+	'auth' => 'Auth',
 );

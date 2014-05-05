@@ -6,4 +6,5 @@ Thumbs.db
 composer.phar
 composer.lock
 phpunit.xml
+report/
 run
