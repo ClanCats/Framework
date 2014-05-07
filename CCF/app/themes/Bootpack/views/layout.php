@@ -53,6 +53,7 @@
 </div><!-- /#header -->
 
 <div id="main-container" class="container">
+	<?php echo UI\Alert::render(); ?>
 	<div>
 		<?php if ( $sidebar !== false ) : ?>
 		<div class="row">

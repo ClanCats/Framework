@@ -23,7 +23,7 @@ class AuthController extends CCViewController
 		// Is this a post request ?
 		if ( CCIn::method( 'post' ) )
 		{
-			echo "POST"; die;
+			UI\Alert::flash( 'success', 'Hallo Welt' );
 		}
 	}
 }
