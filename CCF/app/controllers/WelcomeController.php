@@ -30,8 +30,5 @@ class WelcomeController extends CCViewController
 			'runtime_name'	=> ClanCats::runtime( 'name' ),
 			'environment'	=> ClanCats::environment(),
 		));
-		
-		// add the page sub header
-		$this->theme->sub_header = $this->theme->view( 'welcome_header' );
 	}
 }

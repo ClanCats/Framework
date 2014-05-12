@@ -12,9 +12,11 @@
 
 		<!-- identifier -->
 		<div class="form-group">
-			<?php echo UI\Form::label( 'email', 'Email' )->add_class( 'col-sm-2' ); ?>
+			<?php echo UI\Form::label( 'identifier', 'Email' )->add_class( 'col-sm-2' ); ?>
 			<div class="col-sm-10">
-		  		<?php echo UI\Form::input( 'email' )->placeholder( 'Email' ); ?>
+		  		<?php echo UI\Form::input( 'identifier' )
+		  			->placeholder( 'Email' )
+		  			->value( $last_identifier ); ?>
 			</div>
 		</div>
 
@@ -32,14 +34,15 @@
 				<?php echo UI\Form::checkbox( 'retain', 'Remember me', 1 ); ?>
 			</div>
 		</div>
-
-
-	  <div class="form-group">
-		<div class="col-sm-offset-2 col-sm-10">
-		  <button type="submit" class="btn btn-primary">Sign in</button>
-		  <button type="submit" class="btn btn-default">Login with ClanCats</button>
+		
+		<!-- buttons -->
+		<div class="form-group">
+			<div class="col-sm-offset-2 col-sm-10">
+				<button type="submit" class="btn btn-primary">Sign in</button>
+				<button type="submit" class="btn btn-default">Login with ClanCats</button>
+			</div>
 		</div>
-	  </div>
+		
 	<?php echo UI\Form::end(); ?>
 	</div>
 </div>

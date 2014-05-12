@@ -15,8 +15,14 @@ return array(
 	 * an secound route with the @ ( to action ) command.
 	 *
 	 * example: 
-	 *     '#root'   => 'Root',
-	 *     'detail'  => 'Root@detail'
+	 *     '#root'         => 'Root',                 // private route
+	 *
+	 *     'foo'           => function() {  },        // closure
+	 *     'bar'           => 'Bar',                  // controller
+	 *     'detail'        => 'Root@detail',          // controller with action
+	 *     'route@alias'   => 'controller?foo,bar',   // alias, controller with parameters
+	 *
+	 *     '@myalias'      => 'to/my/url/'            // alias only
 	 */
 	'#root' => 'Welcome',
 
@@ -29,5 +35,10 @@ return array(
 	/*
 	 * The authentication module
 	 */
-	'auth' => 'Auth',
+	'login'				 	=> 'auth@sign_in',
+	'logout' 				=> 'auth@sign_out',
+	'join@auth.sign_up' 		=> 'auth@sing_up',
+	
+	'@auth.sign_in'			=> to( 'login/', array( ':back' ) ),
+	'@auth.sign_out'			=> to( 'logout/', array( ':fingerprint' ) ),
 );

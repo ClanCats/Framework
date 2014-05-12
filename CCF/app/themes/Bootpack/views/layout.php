@@ -36,6 +36,19 @@
 			
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 				<ul class="nav navbar-nav">
+					<?php if ( CCAuth::valid() ) : ?>
+					<li>
+						<a href="<?php echo to( '@auth.sign_out' ); ?>">Sign Out</a>
+					</li>
+					<?php else : ?>
+					<li>
+						<a href="<?php echo to( '@auth.sign_in' ); ?>">Sign In</a>
+					</li>
+					<li>
+						<a href="<?php echo to( '@auth.sign_up' ); ?>">Sign Up</a>
+					</li>
+					<?php endif; ?>
+					
 					<?php if ( ClanCats::in_development() ) : ?>
 					<li class="dropdown">
 						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Dev Toolbox <b class="caret"></b></a>
