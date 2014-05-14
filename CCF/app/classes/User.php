@@ -12,6 +12,11 @@
 class User extends Auth\User
 {	
 	/**
+	 * The users table
+	 */
+	protected static $_table = 'auth_users';
+	
+	/**
 	 * The user model defaults
 	 *
 	 * @var array
@@ -19,7 +24,6 @@ class User extends Auth\User
 	protected static $_defaults = array(
 		'id'	,
 		'active'			=> array( 'bool', true ),
-		'username'		=> null,
 		'email'			=> null,
 		'password'		=> null,
 		'storage'		=> array( 'json', array() ),
