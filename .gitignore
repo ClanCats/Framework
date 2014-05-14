@@ -1,4 +1,5 @@
 public/assets/packtacular/
+CCF/app/config/migrator.json
 CCF/storage/
 CCF/vendor/
 .DS_Store
@@ -8,3 +9,4 @@ composer.lock
 phpunit.xml
 report/
 run
+

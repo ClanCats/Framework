@@ -11,5 +11,5 @@ return array(
     /*
      * an description of your application
      */
-    'description'      => 'The ClanCats Framework in PHP for fast and modern Web Applications.',
+    'description'      => 'ClanCats Framework efficiency, clarity and performance.',
 );
