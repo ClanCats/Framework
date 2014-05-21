@@ -83,7 +83,34 @@ class AuthController extends CCViewController
 			// will ignore all other post values in the assing process.
 			$user->strict_assign( array( 'email', 'password' ), CCIn::all( 'post' ) );
 			
+			$validator = CCValidator::post();
 			
+			// assign the labels to the validator this way we get 
+			// correct translated error messages.
+			$validator->label( array(
+				'email' => 'Email',
+				'password' => 'Password',
+				'password_match' => 'Password Repeat'
+			));
+			
+			// does the user already exist
+			$validator->set( 'same_email', User::find( 'email', $user->email ) );
+			$validator->negative( 'same_email', __( ':action.message.email_in_use' ) );
+			
+			// validate the other fields
+			$validator->rules( 'email', 'required', 'email' );
+			$validator->rules( 'password', 'required', 'min:6' );
+			$validator->rules( 'password_match', 'required', 'match:password' );
+			
+			// when the data passes the validation
+			if ( $validator->success() )
+			{
+				UI\Alert::add( 'success', 'Everything fine' );
+			}
+			else
+			{
+				UI\Alert::add( 'danger', $validator->errors() );
+			}
 		}
 	}
 	
