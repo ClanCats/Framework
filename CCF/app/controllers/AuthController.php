@@ -88,14 +88,14 @@ class AuthController extends CCViewController
 			// assign the labels to the validator this way we get 
 			// correct translated error messages.
 			$validator->label( array(
-				'email' => 'Email',
-				'password' => 'Password',
-				'password_match' => 'Password Repeat'
+				'email' => __( 'model/user.label.email' ),
+				'password' => __( 'model/user.label.password' ),
+				'password_match' => __( 'model/user.label.password_match' )
 			));
 			
 			// does the user already exist
 			$validator->set( 'same_email', User::find( 'email', $user->email ) );
-			$validator->negative( 'same_email', __( ':action.message.email_in_use' ) );
+			$validator->message( __(':action.message.email_in_use'), 'negative', 'same_email' );
 			
 			// validate the other fields
 			$validator->rules( 'email', 'required', 'email' );
@@ -105,7 +105,15 @@ class AuthController extends CCViewController
 			// when the data passes the validation
 			if ( $validator->success() )
 			{
-				UI\Alert::add( 'success', 'Everything fine' );
+				// because the user input is correct we can now save the 
+				// object to the database and sign the user in.
+				$user->save();
+				
+				CCAuth::sign_in( $user );
+				
+				UI\Alert::flash( 'success', __( ':action.message.success' ) );
+				
+				return CCRedirect::to( '/' );
 			}
 			else
 			{
