@@ -35,9 +35,9 @@ return array(
 	/*
 	 * The authentication module
 	 */
-	'login'				 	=> 'auth@sign_in',
-	'logout' 				=> 'auth@sign_out',
-	'join@auth.sign_up' 		=> 'auth@sing_up',
+	'login'				 	=> 'Auth@sign_in',
+	'logout' 				=> 'Auth@sign_out',
+	'join@auth.sign_up' 		=> 'Auth@sign_up',
 	
 	'@auth.sign_in'			=> to( 'login/', array( ':back' ) ),
 	'@auth.sign_out'			=> to( 'logout/', array( ':fingerprint' ) ),
