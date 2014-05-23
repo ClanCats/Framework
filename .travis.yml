@@ -17,6 +17,7 @@ before_script:
 
 script:
  - php cli phpunit::build
+ - php cli migrator::migrate
  - phpunit --coverage-text
 
 matrix:
