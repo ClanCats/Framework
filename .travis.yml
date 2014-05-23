@@ -11,7 +11,8 @@ env:
  - DB=mysql
 
 before_script:
- - mysql -e 'create database db_ccf2_phpunit'
+ - mysql -e 'create database db_ccf2_phpunit' 
+ - mysql -e 'create database db_my-application'
  - composer self-update
  - composer install --prefer-source --no-interaction --dev
 
