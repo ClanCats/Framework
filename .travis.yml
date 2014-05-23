@@ -12,7 +12,7 @@ env:
 
 before_script:
  - mysql -e 'create database db_ccf2_phpunit' 
- - mysql -e 'create database db_my-application'
+ - mysql -e 'create database db_my_application'
  - composer self-update
  - composer install --prefer-source --no-interaction --dev
 
