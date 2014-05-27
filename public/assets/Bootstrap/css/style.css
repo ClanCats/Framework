@@ -411,8 +411,6 @@ input[type="password"] {
 .alert {
 	-webkit-border-radius: 0;
 	border-radius: 0;
-	-webkit-box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
-	box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
 	opacity: 0.8;
 }
 
