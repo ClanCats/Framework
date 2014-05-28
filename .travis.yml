@@ -18,6 +18,7 @@ before_script:
 
 script:
  - php cli phpunit::build
+ - php cli doctor::security_key
  - php cli migrator::migrate
  - phpunit --coverage-text
 
