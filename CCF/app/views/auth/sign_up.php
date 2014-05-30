@@ -15,9 +15,8 @@
 		<div class="form-group">
 			<?php echo Form::label( 'email', __( 'model/user.label.email' ) )->add_class( 'col-sm-2' ); ?>
 			<div class="col-sm-10">
-		  		<?php echo Form::input( 'email' )
-		  			->placeholder( __( 'model/user.label.email' ) )
-		  			->value( _e( $user->email ) ); ?>
+		  		<?php echo Form::input( 'email', $user->email, 'email' )
+		  			->placeholder( __( 'model/user.label.email' ) ); ?>
 			</div>
 		</div>
 
@@ -25,7 +24,7 @@
 		<div class="form-group">
 			<?php echo Form::label( 'password', __( 'model/user.label.password' ) )->add_class( 'col-sm-2' ); ?>
 			<div class="col-sm-10">
-		  		<?php echo Form::input( 'password', 'password' )
+		  		<?php echo Form::input( 'password', null, 'password' )
 		  			->placeholder( __( 'model/user.label.password' ) ); ?>
 			</div>
 		</div>
@@ -34,7 +33,7 @@
 		<div class="form-group">
 			<?php echo Form::label( 'password_match', __( 'model/user.label.password_match' ) )->add_class( 'col-sm-2' ); ?>
 			<div class="col-sm-10">
-		  		<?php echo Form::input( 'password_match', 'password' )
+		  		<?php echo Form::input( 'password_match', null, 'password' )
 		  			->placeholder( __( 'model/user.label.password_match' ) ); ?>
 			</div>
 		</div>

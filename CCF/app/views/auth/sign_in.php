@@ -15,9 +15,8 @@
 		<div class="form-group">
 			<?php echo Form::label( 'identifier', __( 'model/user.label.email' ) )->add_class( 'col-sm-2' ); ?>
 			<div class="col-sm-10">
-		  		<?php echo Form::input( 'identifier' )
-		  			->placeholder( __( 'model/user.label.email' ) )
-		  			->value( _e( $last_identifier ) ); ?>
+		  		<?php echo Form::input( 'identifier', $last_identifier )
+		  			->placeholder( __( 'model/user.label.email' ) ); ?>
 			</div>
 		</div>
 
@@ -25,14 +24,15 @@
 		<div class="form-group">
 			<?php echo Form::label( 'password', __( 'model/user.label.password' ) )->add_class( 'col-sm-2' ); ?>
 			<div class="col-sm-10">
-		  		<?php echo Form::input( 'password', 'password' )->placeholder( __( 'model/user.label.password' ) ); ?>
+		  		<?php echo Form::input( 'password', null, 'password' )
+		  			->placeholder( __( 'model/user.label.password' ) ); ?>
 			</div>
 		</div>
 
 		<!-- remember me -->
 		<div class="form-group">
 			<div class="col-sm-offset-2 col-sm-10">
-				<?php echo Form::checkbox( 'retain', __( 'model/user.label.retain' ), 1 ); ?>
+				<?php echo Form::checkbox( 'retain', __( 'model/user.label.retain' ), true ); ?>
 			</div>
 		</div>
 		
