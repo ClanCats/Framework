@@ -54,6 +54,7 @@
 						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Dev Toolbox <b class="caret"></b></a>
 						<ul class="dropdown-menu">
 							<li><a href="<?php echo to('dev/session/'); ?>">Session Sandbox</a></li>
+							<li><a href="<?php echo to('dev/mail/'); ?>">Mail Sandbox</a></li>
 							<li><a href="<?php echo to('dev/common/phpinfo'); ?>">PHP Info</a></li>
 						</ul>
 					</li>
