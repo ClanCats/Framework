@@ -8,6 +8,7 @@
 	<meta name="description" content="<?php echo $description; ?>">
 	
 	<!-- styling -->
+	<?php echo CCAsset::code( 'css', 'vendor' ); ?>
 	<?php echo CCAsset::code( 'css', 'theme' ); ?>
 	<?php echo CCAsset::code( 'css' ); ?>
 
