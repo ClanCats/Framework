@@ -47,7 +47,7 @@ class App extends CCApp
 		/*
 		 * try to authenticate the user
 		 */
-		//static::$user =& Auth::instance()->user;
+		//static::$user =& CCAuth::handler()->user;
 		
 		/*
 		 * load the App configuration
