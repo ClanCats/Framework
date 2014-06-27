@@ -85,9 +85,10 @@
 </div>
 
 <!-- footer scripts -->
-<?php echo CCAsset::code( 'js', 'lib' ); ?>
+<?php echo CCAsset::code( 'js', 'vendor' ); ?>
 <?php echo CCAsset::code( 'js', 'theme' ); ?>
 <?php echo CCAsset::code( 'js' ); ?>
+<?php echo $js; ?>
 </body>
 
 </html>

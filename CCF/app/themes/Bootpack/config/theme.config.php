@@ -25,6 +25,16 @@ return array(
          * sidebar ( if false full container gets used )
          */
         'sidebar'	=> false,
+        
+        /*
+         * Footer appended scripts
+         * When you have a view specifc script you can append them to the js var just like:
+         *
+         *     $theme->capture_append( 'js', function() {
+	     *         echo "<script>console.log( 'hello world' );</script>";
+         *     });
+         */
+        'js' => '',
     ), 
     
     /*
@@ -48,7 +58,7 @@ return array(
 		'less/style.less' 				=> 'theme@style',
 
 		// js core
-		'js/jquery/jquery.js'			=> 'lib@lib',
+		'jquery.js'						=> 'vendor@lib',
 		'js/bootstrap.min.js'			=> 'theme@core',
 		'js/application.js'				=> 'theme@app',
 	)
