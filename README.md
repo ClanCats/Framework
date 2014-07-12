@@ -6,7 +6,7 @@ ClanCats Framework 2.0
 [![Downloads](http://img.shields.io/packagist/dm/clancats/core.svg)](https://github.com/ClanCats/Framework)
 
 
-ClanCats Framework, because your time is precious. HMVC PHP framework.
+ClanCatsFramework, because your time is precious. HMVC PHP framework.
 
 _This is the Application repository if you like to contribute take a look at the core repository:_ https://github.com/ClanCats/Core
 

@@ -24,7 +24,7 @@ class AuthController extends CCViewController
 		// theme this allows us to have a diffrent sign_in for every theme.
 		// If the view does not exist in the theme it will load the view from 
 		// the default view folder.
-		$this->view = $this->theme->view( 'auth/sign_in' );
+		$this->view = $this->theme->view( 'auth/sign_in.view' );
 		
 		$this->view->last_identifier = CCIn::post( 'identifier' );
 		
@@ -68,7 +68,7 @@ class AuthController extends CCViewController
 		}
 		
 		$this->theme->topic = __( ':action.topic' );
-		$this->view = $this->theme->view( 'auth/sign_up' );
+		$this->view = $this->theme->view( 'auth/sign_up.view' );
 		
 		// create a new user object as data holder
 		$user = new User;
