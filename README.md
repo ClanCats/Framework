@@ -16,16 +16,7 @@ This PHP framework was originally build 2010 as the core of a social Plattform c
 
 ## Why CCF?
 
-There are many brilliant frameworks out there, so why should you use this one? Every Framework has it's own beauty, with CCF we strongly focus on performance, dynamic and efficiency. Just give a us try you will not be disappointed. 
-
-When someone asks me for about the benefits in CCF:
-
- * Scalability 
- * Performence
- * Structure
- * Extensibilty
- * Theming
- * Routing
+There are many brilliant frameworks out there, so why should you use this one? Every Framework has it's own beauty, with CCF we strongly focus on simple usage, high extensibility and a clear structure. Just give a us try you will not be disappointed. 
  
 ## Installation
 
