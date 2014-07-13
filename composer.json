@@ -1,12 +1,11 @@
 {
 	"name": "clancats/framework",
-	"description": "ClanCats Framework, efficiency, clarity and performence.",
-	"homepage": "http://www.clancats.com",
+	"description": "ClanCats Framework, because your time is precious. HMVC PHP framework.",
+	"homepage": "http://www.clancats.io",
 	"keywords": ["ccf", "framework", "clancats"],
 	"license": "MIT",
 	"require": {
-		"php": ">=5.3",
-		"clancats/core": "dev-master"
+		"clancats/core": "2.0.*"
 	},
 	"config": {
 		"vendor-dir": "CCF/vendor"
@@ -22,5 +21,5 @@
 			"php cli doctor::security_key"
 		]
 	},
-	"minimum-stability": "dev"
+	"minimum-stability": "stable"
 }
