@@ -28,7 +28,8 @@ require_once __DIR__."/framework.php";
 
 
 // get passed arguments
-if ( isset( $argv ) ) {
+if ( isset( $argv ) ) 
+{
 	array_shift( $argv );
 	$argv = implode( ' ', $argv );
 }
