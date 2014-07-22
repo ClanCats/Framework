@@ -24,6 +24,7 @@ class User extends Auth\User
 	protected static $_defaults = array(
 		'id'	,
 		'active'			=> array( 'bool', true ),
+		'group_id'		=> 0,
 		'email'			=> null,
 		'password'		=> null,
 		'storage'		=> array( 'json', array() ),
