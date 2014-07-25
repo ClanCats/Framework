@@ -11,15 +11,14 @@ env:
  - DB=mysql
 
 before_script:
- - mysql -e 'create database db_ccf2_phpunit' 
- - mysql -e 'create database db_my_application'
+ - mysql -e 'create database ccf2_phpunit_application'
+ - mysql -e 'create database ccf2_phpunit_database'
  - composer self-update
  - composer install --prefer-source --no-interaction --dev
 
 script:
  - php cli phpunit::build
  - php cli doctor::security_key
- - php cli migrator::migrate
  - phpunit --coverage-text
 
 matrix:

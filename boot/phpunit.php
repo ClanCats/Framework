@@ -45,3 +45,13 @@ CCCli::line("==============================
    \_____\_____|_| ramework
 ==============================
 ", 'cyan');
+
+// complete overwrite of DB configuration
+CCConfig::create( 'database' )->_data = CCConfig::create( 'Core::phpunit/database' )->_data;
+
+// delete all database table
+DB\Migrator::hard_reset();
+DB\Migrator::hard_reset( 'phpunit' );
+
+// run the migrations
+DB\Migrator::migrate( true );
