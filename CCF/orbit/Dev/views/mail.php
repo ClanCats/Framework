@@ -41,7 +41,7 @@
 	
 	<div class="col-md-6">
 		
-		<h4>Enirnoment <small><?php echo ClanCats::environment(); ?></small></h4>
+		<h4>Environment <small><?php echo ClanCats::environment(); ?></small></h4>
 		<pre style="overflow: auto; overflow-x:scroll;white-space: nowrap;"><?php echo $config_dump; ?></pre>
 	</div>
 </div>
