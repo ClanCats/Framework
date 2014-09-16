@@ -52,7 +52,7 @@ class CCAsset extends \Core\CCAsset
 		// let packtacular handle css and less files
 		if ( $extension == 'css' )
 		{	
-			foreach( static::holder( $name )->assets['_packtacular'] as $key => $pack ) 
+			foreach( static::holder( $name )->get('_packtacular') as $key => $pack ) 
 			{
 				if ( !array_key_exists( 'less', $pack ) ) 
 				{
@@ -75,7 +75,7 @@ class CCAsset extends \Core\CCAsset
 		// let packtacular handle js files
 		elseif ( $extension == 'js' )
 		{
-			foreach( static::holder( $name )->assets['_packtacular'] as $key => $pack ) 
+			foreach( static::holder( $name )->get( '_packtacular' ) as $key => $pack ) 
 			{
 				if ( !array_key_exists( 'js', $pack ) ) 
 				{
