@@ -4,6 +4,7 @@ ClanCats Framework 2.0
 [![Build Status](https://travis-ci.org/ClanCats/Framework.svg?branch=master&style=flat)](https://travis-ci.org/ClanCats/Framework)
 [![License](http://img.shields.io/packagist/l/clancats/framework.svg?style=flat)](https://github.com/ClanCats/Framework)
 [![Downloads](http://img.shields.io/packagist/dt/clancats/core.svg?style=flat)](https://github.com/ClanCats/Framework)
+[![Packagist](https://img.shields.io/packagist/v/ClanCats/Framework.svg?style=flat)]()
 
 
 ClanCatsFramework, because your time is precious. HMVC PHP framework.
