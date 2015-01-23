@@ -1,5 +1,4 @@
-ClanCats Framework 2.0
-======================
+![ClanCats Framework 2.0](https://cloud.githubusercontent.com/assets/956212/5882224/c7e30646-a347-11e4-9af3-f05cb7fb829f.jpg)
 
 [![Build Status](https://travis-ci.org/ClanCats/Framework.svg?branch=master&style=flat)](https://travis-ci.org/ClanCats/Framework)
 [![License](http://img.shields.io/packagist/l/clancats/framework.svg?style=flat)](https://github.com/ClanCats/Framework)
