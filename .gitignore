@@ -1,6 +1,7 @@
 public/assets/packtacular/
 CCF/app/config/migrator.json
 CCF/vendor/
+CCF/orbit/
 storage/
 .DS_Store
 Thumbs.db

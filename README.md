@@ -1,12 +1,11 @@
-ClanCats Framework 2.0
-======================
+![ClanCats Framework 2.1](https://cloud.githubusercontent.com/assets/956212/5882224/c7e30646-a347-11e4-9af3-f05cb7fb829f.jpg)
 
 [![Build Status](https://travis-ci.org/ClanCats/Framework.svg?branch=master&style=flat)](https://travis-ci.org/ClanCats/Framework)
 [![License](http://img.shields.io/packagist/l/clancats/framework.svg?style=flat)](https://github.com/ClanCats/Framework)
 [![Downloads](http://img.shields.io/packagist/dm/clancats/core.svg?style=flat)](https://github.com/ClanCats/Framework)
 
 
-ClanCatsFramework, because your time is precious. HMVC PHP framework.
+ClanCatsFramework, painless web development because your time is precious. HMVC PHP framework.
 
 _This is the Application repository if you like to contribute take a look at the core repository:_ https://github.com/ClanCats/Core
 

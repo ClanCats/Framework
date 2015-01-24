@@ -5,7 +5,9 @@
 	"keywords": ["ccf", "framework", "clancats"],
 	"license": "MIT",
 	"require": {
-		"clancats/core": "2.0.*"
+		"composer/installers": "~1.0",
+		"clancats/core": "2.0.*",
+		"clancats/devtools": "dev-master"
 	},
 	"config": {
 		"vendor-dir": "CCF/vendor"

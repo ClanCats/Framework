@@ -40,5 +40,5 @@ return array(
 	'join@auth.sign_up' 		=> 'Auth@sign_up',
 	
 	'@auth.sign_in'			=> to( 'login/', array( ':back' ) ),
-	'@auth.sign_out'			=> to( 'logout/', array( ':fingerprint' ) ),
+	'@auth.sign_out'		=> to( 'logout/', array( ':fingerprint' ) ),
 );
