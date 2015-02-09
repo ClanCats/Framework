@@ -5,12 +5,12 @@
  *---------------------------------------------------------------
  *
  * This is the framework initialisation. Thats the point where
- * all important parts come together and build something 
- * aweomse together.
+ * all important parts come together to build something 
+ * awesome.
  *
  * @package		ClanCatsFramework
  * @author		Mario Döring <mario@clancats.com>
- * @version		2.0
+ * @version		2.1
  * @copyright 	2010 - 2015 ClanCats GmbH
  *
  * ###
@@ -26,7 +26,7 @@ define( 'CCROOT', __DIR__.'/' );
 
 /*
  *---------------------------------------------------------------
- * file extension 
+ * File extension 
  *---------------------------------------------------------------
  * 
  * This defines the global used file extention of the php files.
@@ -35,7 +35,7 @@ define( 'EXT', '.php' );
 
 /*
  *---------------------------------------------------------------
- * get the boot paths
+ * Get the boot paths
  *---------------------------------------------------------------
  * 
  * You can modify that file, its yours. Its especially useful
@@ -46,27 +46,16 @@ $paths = require CCROOT.'boot/paths'.EXT;
 
 /*
  *---------------------------------------------------------------
- * the direcotries
+ * Custom directories
  *---------------------------------------------------------------
  * 
- * Here are the module directories defined. 
- * @ToDo: move them to the classes that use that direcotries. 
- *        that way the you could subclass a class and define 
- *        a custom direcotry.
+ * You can define or overwrite custom resource directories.
  */
-$directories = array(
-	'controller'			=> 'controllers/',
-	'language'			=> 'language/',
-	'class'				=> 'classes/',
-	'console'			=> 'console/',
-	'config'				=> 'config/',
-	'view'				=> 'views/',
-	'test'				=> 'tests/',
-);
+$directories = array();
 
 /*
  *---------------------------------------------------------------
- * wake CCF
+ * Wake CCF
  *---------------------------------------------------------------
  * 
  * Lets require the ClanCatsFramework resources
@@ -75,12 +64,12 @@ require $paths['core'].'wake'.EXT;
 
 /*
  *---------------------------------------------------------------
- * wake the application
+ * Wake the application
  *---------------------------------------------------------------
  * 
- * Lets wake the main application.
+ * As final step we wake our main application.
  */
 ClanCats::wake_app( 'App' );
 
-// at this point the app has completet its own boot
+// profile that stuff
 CCProfiler::check( "[CCF] app wake completed" );
