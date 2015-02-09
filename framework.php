@@ -83,4 +83,4 @@ require $paths['core'].'wake'.EXT;
 ClanCats::wake_app( 'App' );
 
 // at this point the app has completet its own boot
-CCProfiler::check( "CCF - App completed." );
+CCProfiler::check( "[CCF] app wake completed" );
