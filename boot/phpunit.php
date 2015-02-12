@@ -36,7 +36,15 @@ require_once __DIR__."/../framework.php";
 CCOrbit::enter( COREPATH.'orbit/CCUnit' );
 
 // write header
-ClanCats::write_cli_header();
+CCCli::line("==============================
+    _____ _____ ______ 
+   / ____/ ____|  ____|
+  | |   | |    | |__   
+  | |   | |    |  __|  
+  | |___| |____| |     
+   \_____\_____|_| ramework
+==============================
+", 'cyan');
 
 // complete overwrite of DB configuration
 CCConfig::create( 'database' )->_data = CCConfig::create( 'Core::phpunit/database' )->_data;
