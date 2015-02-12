@@ -32,7 +32,7 @@ full stack php framework.
 
 User friendly or developer friendly is the core philosophy. The trick should be to keep the balance between the simplest and the best solution for a problem. I've been working on a lot big applications using _Zend and Symfony2_ and there was always the point where I looked at the code and thought: "wait so to generate a random string I need a class extending a container wich provides me the util service factory to create a new string util instance where i can execute the random string method on?". Often it's a complete overkill to reach a simple goal using these frameworks. So the goal of CCF is to make development comfortable instead of following 100% a convetion.
 
-## Histoy
+## History
 
 This PHP framework was originally build 2010 as the core of a social Plattform called "ClanCats". In 2012 I decided to split the core and the application apart, so CCF was born. After developing several application on CCF v1.0, the point has come to rethink the core structure and rewrite the entire thing to a new version that should go open source.
 
