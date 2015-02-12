@@ -1,34 +1,35 @@
-ClanCats Framework 2.0
-======================
+![ClanCats Framework 2.1](https://cloud.githubusercontent.com/assets/956212/5882224/c7e30646-a347-11e4-9af3-f05cb7fb829f.jpg)
 
 [![Build Status](https://travis-ci.org/ClanCats/Framework.svg?branch=master&style=flat)](https://travis-ci.org/ClanCats/Framework)
 [![License](http://img.shields.io/packagist/l/clancats/framework.svg?style=flat)](https://github.com/ClanCats/Framework)
 [![Downloads](http://img.shields.io/packagist/dm/clancats/core.svg?style=flat)](https://github.com/ClanCats/Framework)
 
 
-ClanCatsFramework, because your time is precious. HMVC PHP framework.
+ClanCatsFramework, painless web development no overkill. HMVC PHP framework.
 
 _This is the Application repository if you like to contribute take a look at the core repository:_ https://github.com/ClanCats/Core
 
-## About CCF
+## Philosophy
 
-This PHP framework was originally build 2010 as the core of a social Plattform called "ClanCats". In 2012 we decided to split the core and the application apart, so the CCF was born. After developing several application on CCF v1.0, the point has come to rethink the core structure and rewrite the entire thing to a new version that should go open source.
+There are a many brilliant frameworks out there and I don't want to reinvent the wheel. My vision of CCF is modern, well-architected, high performance and **user friendly** full stack php framework. 
 
-## Why CCF?
+User friendly or developer friendly is the core philosophy. The trick should be to keep the balance between the simplest and the best solution for a problem. I've been working on a lot big applications using _Zend and Symfony2_ and there was always the point where I looked at the code and thought: "wait so to generate a random string I need a class extending a container wich provides me the util service factory to create a new string util instance where i can execute the random string method on?". Often it's a complete overkill to reach a simple goal using these frameworks. So the goal of CCF is to make development comfortable instead of following 100% a convetion.
 
-There are many brilliant frameworks out there, so why should you use this one? Every Framework has it's own beauty, with CCF we strongly focus on simple usage, high extensibility and a clear structure. Just give a us try you will not be disappointed. 
- 
+## Histoy
+
+This PHP framework was originally build 2010 as the core of a social Plattform called "ClanCats". In 2012 I decided to split the core and the application apart, so CCF was born. After developing several application on CCF v1.0, the point has come to rethink the core structure and rewrite the entire thing to a new version that should go open source.
+
 ## Installation
 
-Setting up a new instance of CCF2 can be done simply through command, or, in other words, with composer.
+Setting up a new instance of CCF2 can be done simply with one command, or, in other words, with composer.
 
-Run the following command to create a new project with CCF.
+Run the following command to create a new CCF project.
 
 ```
 $ composer create-project clancats/framework <your project name> --prefer-dist
 ```
 
-_Composer installed? Read the installation guide here: https://getcomposer.org/download/_
+_Composer not installed? Read the installation guide here: https://getcomposer.org/download/_
 
 ## Requirements
 
