@@ -7,6 +7,15 @@
 
 ClanCatsFramework, painless web development no overkill. HMVC PHP framework.
 
+ * [Philosophy](#philosophy) 
+ * [History](#history)
+ * [Installation](#installation)
+ * [Requirements](#requirements)
+ * [Permissions](#permissions) 
+ * [Structure](#structure)
+ * [Configuration](#configuration)
+ * [Routing](#routing)
+
 _This is the Application repository if you like to contribute take a look at the core repository:_ https://github.com/ClanCats/Core
 
 ## Philosophy
