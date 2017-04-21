@@ -1,0 +1,21 @@
+/**
+ * This is the main file of your applications container
+ * ---
+ * Imports:
+ */
+// dependencies
+import clancats/core
+
+// application
+import app/actions
+import app/handlers
+
+/**
+ * Configuration
+ */
+:application.name: "My ClanCats Application"
+
+/**
+ * Application services
+ */
+# @myservice: Acme\MyService
