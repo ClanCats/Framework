@@ -1,0 +1,15 @@
+/**
+ * This container file holds your application request handlers
+ * ---
+ */
+@handler.about: Handlers\About
+ = route.path: "/about" 
+
+/**
+ * Auth
+ */
+@auth.signIn: Handlers\Auth\SignIn
+ = rout.path: "/login"
+ 
+@auth.signUp: Handlers\Auth\SignUp
+ = rout.path: "/register"
